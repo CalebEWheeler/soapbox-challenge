@@ -1,0 +1,17 @@
+.title-container {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container:hover {
+  cursor: pointer;
+}
+
+.gif-image {
+  width: 250px;
+}
