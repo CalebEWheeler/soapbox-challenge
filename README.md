@@ -17,6 +17,8 @@ Depending on your IDE or text editor used, you may need to install some extensio
 * Ember JS (ES6) and Handlebars code snippets, created by Phani Teja Komaravolu
 * Ember Snippets, created by exelord;
 
+You will need to create an account with GIPHY api at 'https://developers.giphy.com/' and obtain an api key for app development. You will then need to type this file path into your '.gitignore' file: 'app/data/keys.js' so your api key will not be tracked by git. After that is complete you can now create '/app/data/keys.js'. Check by typing 'git status' in the console to make sure 'app/data/keys.js' is not being tracked. When you are successful you can then copy and paste the following into your keys.js file: 'export const api = {key: 'API_KEY_HERE'};' replace 'API_KEY_HERE' with your api key.
+
 ## Installation
 
 * `git clone <repository-url>` this repository
