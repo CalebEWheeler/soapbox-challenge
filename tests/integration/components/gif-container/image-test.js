@@ -19,6 +19,8 @@ module('Integration | Component | gif-container/image', function(hooks) {
     assert.dom('img').hasAttribute('alt', '.gif');
     //will test if the img element has a class named 'gif-image'.
     assert.dom('img').hasClass('gif-image');
+    //will test if the textarea element has the text of the expected src value.
+    assert.dom('textarea').containsText(this.src);
     
   });
 });
