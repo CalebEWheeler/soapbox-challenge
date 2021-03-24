@@ -26,4 +26,4 @@
 /package.json.ember-try
 
 # api_key
-/data/keys.js
+app/data/keys.js
