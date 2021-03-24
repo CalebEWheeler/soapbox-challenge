@@ -1,2 +1,7 @@
 @import './_grid.css';
 @import './_gif.css';
+@import './_navbar.css';
+
+body {
+  background-color: rgb(36, 35, 35);
+}

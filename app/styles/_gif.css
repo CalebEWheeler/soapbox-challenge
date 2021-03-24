@@ -6,12 +6,26 @@
 .image-container {
   display: flex;
   justify-content: center;
+  transition: transform .2s ease-in-out;
 }
 
 .image-container:hover {
   cursor: pointer;
+  position:relative;
+    top:-25px;
+    left:-35px;
+    width:250px;
+    height:auto;
+    display:block;
+    z-index:999;
+    transform: scale(1.1);  
 }
 
 .gif-image {
   width: 250px;
+  border-radius: 10px;
+}
+
+.image-container>textarea {
+  display:none;
 }
