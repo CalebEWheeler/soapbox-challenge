@@ -11,16 +11,9 @@ module('Integration | Component | navbar', function(hooks) {
     // Handle any actions with this.set('myAction', function(val) { ... });
 
     await render(hbs`<Navbar />`);
-
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <Navbar>
-        template block text
-      </Navbar>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    //will test if the element 'p' has a class of 'navbar-title'.
+    assert.dom('p').hasClass('navbar-title');
+    //will test if the element 'img' with a class of 'navbar-image' has an attribute 'src'.
+    assert.dom('img.navbar-image').hasAttribute('src');
   });
 });
