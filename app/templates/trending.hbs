@@ -1,2 +1,11 @@
 {{page-title "Trending GIFS"}}
-{{outlet}}
+{{!-- place GridContainer component into trending template and utilize an 'each' helper to loop through all of the returned gifs from the model created in the 'trending' route.  --}}
+<GridContainer>
+  {{#each this.model as |gif|}}
+    <GifContainer 
+    {{!-- Extracted the desired image and title for a gif and placed them into the 'image' and 'title' props to be passed down and made accessible to the child component --}}
+      @image={{gif.images.downsized.url}}
+      @title={{gif.title}}
+    />
+  {{/each}}
+</GridContainer>  
