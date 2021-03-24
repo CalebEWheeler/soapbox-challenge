@@ -7,7 +7,8 @@ export default class TrendingRoute extends Route {
     const getTrendingGifs = fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${api.key}&limit=25&rating=r`)
     .then(result => result.json())
     .then(retrievedGifs => {
-      console.log(retrievedGifs)
+      console.log(retrievedGifs.data)
+      return retrievedGifs.data;
     })
     .catch(error => console.log(error));
 
