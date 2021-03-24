@@ -1,5 +1,6 @@
 <div class="image-container">
   {{!-- I placed the property for 'src' to be displayed in the 'img' tag below --}}
   <img class="gif-image" src={{@src}} alt=".gif">
+  {{!-- added the src in a hidden textarea to try to use clipboard.js with a click event that would copy the link --}}
   <textarea>{{@src}}</textarea>
 </div>

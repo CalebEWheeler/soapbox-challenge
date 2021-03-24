@@ -6,7 +6,7 @@
   align-items: center;
   border-radius: 10px;
   margin: 0 auto;
-  padding: 20px 5px;
+  padding: 40px 5px;
 }
 
 .grid-item {
@@ -15,7 +15,7 @@
   margin: 0 auto;
   border: 1px solid rgb(58, 56, 56);
   border-radius: 10px;
-  background-color: rgb(143, 133, 133);
+  background-color: rgb(56 54 54);
 }
 
 @media (min-width: 768px) {

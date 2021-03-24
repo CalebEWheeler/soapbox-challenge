@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   margin: 5px 10px;
+  transition: transform .2s ease-in-out;
 }
 
 .navbar-title {
@@ -22,4 +23,24 @@
 
 .navbar-image {
   width: 45px;
+}
+
+.fa-search {
+  font-size: 40px;
+  align-self: center;
+  color: #FCFFFF;
+  transition: transform .2s ease-in-out;
+}
+
+.search-input {
+  display: none;
+  border-radius: 12px;
+  padding: 5px;
+  transition: transform .2s ease-in-out;
+}
+
+.fa-search:hover, 
+.search-input:hover, 
+.navbar-title-container:hover {
+  transform: scale(1.1); 
 }
