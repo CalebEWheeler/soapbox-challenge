@@ -10,17 +10,12 @@ module('Integration | Component | gif-container/image', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<GifContainer::Image />`);
+    this.set('src', "https://media0.giphy.com/media/zaCojXv2S01zy/giphy-downsized.gif?cid=722b3a9fbs8gblxtep0eavs63lgpywu3of8wth60pu1ccdip&rid=giphy-downsized.gif");
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <GifContainer::Image>
-        template block text
-      </GifContainer::Image>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    await render(hbs`<GifContainer::Image @src={{this.src}}/>`);
+    assert.dom('img').hasAttribute('src', this.src);
+    assert.dom('img').hasAttribute('alt', '.gif');
+    assert.dom('img').hasClass('gif-image');
+    
   });
 });
