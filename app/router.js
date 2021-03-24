@@ -7,6 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
+  //used 'path' to modify the url string path to point to the routes 'index' and 'trending'
   this.route('index', {path: 'gifs'})
   this.route('trending', {path: 'gifs/trending'});
 });
