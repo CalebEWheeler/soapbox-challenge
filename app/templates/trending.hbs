@@ -1,5 +1,7 @@
 {{page-title "Trending GIFS"}}
 {{!-- place GridContainer component into trending template and utilize an 'each' helper to loop through all of the returned gifs from the model created in the 'trending' route.  --}}
+<Input type="text" @value={{this.trendingInput}}/>
+<button type="submit" {{on "click" (fn this.readTrendingInput this.trendingInput this.model)}}>submit</button>
 <GridContainer>
   {{#each this.model as |gif|}}
     <GifContainer 
